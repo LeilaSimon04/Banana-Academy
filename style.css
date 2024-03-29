@@ -111,11 +111,18 @@ header nav ul li a {
     padding-top: 3%;
     background-color: #FFA41B;
 }
-.hero>div>img {width: 100%;
+.imgProf {width: 50%;
 border-radius: 50%;}
-
+.center{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
 .minion {transform: translateY(-150px);}
-
+.large-6{
+    width: 46%;
+}
 /* A propos */
 
 .aPropos {background-color: var(--secondarycolor);}
