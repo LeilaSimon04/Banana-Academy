@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Protest+Riot&display=swap');
+
+
+/* typo pour h1 (sloggan) Protest Riot
+Static puis M PLUS Rounded 1c
+Static */
+
+/* GENERAL */
+*{  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor : #504F6E /*#525FE1*/;
+    --secondarycolor : #F86F03;
+    --tertiocolor : #FFA41B;
+    --quatrocolor : #FFF6F4;
+}
+
+h1 {
+    font-family: "Protest Riot", sans-serif;
+    font-size: 3rem;
+    color: var(--primarycolor);
+    padding: 3%;
+}
+
+span {color: #FFF6F4;
+font-style: italic;}
+
+h2 {
+    font-family: "Protest Riot", sans-serif;
+    font-size: 2rem;
+    font-style:italic;
+    color: var(--quatrocolor);
+    width: 100%;
+    padding: 2% 0 2% 0;
+}
+
+h3 {font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.2rem;
+    font-style: bold;
+    color: var(--primarycolor);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
+p {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    line-height: 1.8rem;
+}
+
+
+a { 
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    text-decoration: none;
+}
+
+a:visited , :link , :focus {
+    color: var(--quatrocolor);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alignCenter{align-items: center;}
+
+.justifyBetween {justify-content: space-between;}
+
+
+
+/* HEADER */
+header {
+    background-color: var(--primarycolor);
+    width: 100%;
+/*je veux que mon header reste fixé même si on scroll dans la page*/
+    position: sticky;
+    top:0;
+/* d'abord Xpx ENSUITE Ypx ensuite blurpx ensuite couleur du blur*/
+    box-shadow: 0px 2px 5px #FFA41B;
+/*fin des règles pour mon sticky*/
+    padding: 2%;
+}
+
+header p { 
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--quatrocolor);
+}
+
+header nav {width: 60%;}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--quatrocolor);
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 91vh;
+    padding-top: 3%;
+    background-color: #FFA41B;
+}
+.hero>img {width: 30%;
+border-radius: 50%;}
+
+.minion {position : relative;
+bottom : 13%; }
+
+/* A propos */
+
+.aPropos {background-color: var(--secondarycolor);}
+
+.aPropos>div {width: 40%;
+    height: 93vh;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.aPropos p {
+    padding-top: 5%;
+    font-size: 1.2rem;
+}
+
+.aPropos>img {border-radius: 600px 0 600px;}
+
+/* FORMATIONS */
+
+.formations {
+    background-color: var(--primarycolor);
+    width: 100%;
+    height: 93vh;
+    padding : 1% 20%;
+}
+
+.formations>div {
+    background-color: var(--secondarycolor);
+    border-radius: 20px;
+    border-style:outset;
+    width: 350px;
+    height: 280px;
+}
+
+.cardFormation {
+    justify-content: center;
+    padding: 3% 2% 4% 2%;
+}
+
+.cardFormation img {
+width: 50%;
+}
+
+.minionRelative {position: relative;
+left: 85%;
+bottom: 60%;}
+
+/* DIPLÔMES */
+
+.diplomes {
+    background-color: var(--secondarycolor);
+    padding : 2% 20%;
+    height: 60vh;
+}
+
+.diplomes h2 {text-align: center;}
+
+.diplomes div {
+    width: 26%;
+    justify-content: center;   
+}
+
+.diplomes img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+footer {    
+    background-color: var(--primarycolor);
+    padding: 2% 20%;
+}
+
+footer h3 {
+    color: var(--secondarycolor);
+    text-align: left;
+}
+
+footer a {
+    width: 100%;
+    display: block;
+    line-height: 2rem;}
+
+footer p {color: var(--tertiocolor);
+padding-bottom: 2%;}
+
+input {padding: 1%;
+    background-color: var(--tertiocolor);
+    border: none;
+}
+
+button {
+    background-color: var(--secondarycolor);
+    border: none;
+    padding: 1%;
+}
+
