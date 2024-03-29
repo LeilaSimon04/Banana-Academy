@@ -111,11 +111,10 @@ header nav ul li a {
     padding-top: 3%;
     background-color: #FFA41B;
 }
-.hero>img {width: 30%;
+.hero>div>img {width: 100%;
 border-radius: 50%;}
 
-.minion {position : relative;
-bottom : 13%; }
+.minion {transform: translateY(-150px);}
 
 /* A propos */
 
@@ -140,7 +139,6 @@ bottom : 13%; }
 .formations {
     background-color: var(--primarycolor);
     width: 100%;
-    height: 93vh;
     padding : 1% 20%;
 }
 
